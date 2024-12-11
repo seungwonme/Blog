@@ -4,7 +4,7 @@
 
 PR이 다음 요구 사항을 충족하는지 확인해 주세요:
 
-- [ ] 다음 가이드라인을 지켰습니다: https://github.com/easerve/easerve/blob/develop/.github/CONVENTIONS.md
+- [ ] 다음 가이드라인을 지켰습니다: https://github.com/seungwonme/blog/blob/develop/.github/CONVENTIONS.md
 - [ ] 변경 사항에 대한 테스트가 추가되었습니다 (for bug fixes / features)
 - [ ] 문서가 추가되었거나 업데이트되었습니다 (for bug fixes / features)
 
