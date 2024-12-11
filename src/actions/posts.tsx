@@ -12,7 +12,7 @@ export async function getPosts(): Promise<Post[] | null> {
     return null;
   }
 
-  let { data: Posts, error } = await supabase.from("Posts").select("*");
+  const { data: Posts, error } = await supabase.from("Posts").select("*");
   if (error) {
     console.error(error);
     return null;
