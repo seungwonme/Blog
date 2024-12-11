@@ -1,8 +1,11 @@
 "use server";
 
 import { getSupabase } from "@/lib/init-supabase";
+import { Database } from "@/lib/database.types";
 
-export async function getPosts() {
+type Post = Database["public"]["Tables"]["Posts"]["Row"];
+
+export async function getPosts(): Promise<Post[] | null> {
   const supabase = await getSupabase();
   if (!supabase) {
     console.error("Supabase not initialized");
