@@ -1,6 +1,9 @@
 import NavLink from "@/components/navLink/NavLink";
+import { getPosts } from "@/actions/posts";
 
-export default function About() {
+export default async function About() {
+  const posts = await getPosts();
+  console.log(posts);
   return (
     <div>
       <h1>About</h1>

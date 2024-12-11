@@ -140,4 +140,4 @@ nextjs에서는 여러 디렉토리 구조를 사용할 수 있지만, [`app` �
 ### References
 
 - https://miriya.net/blog/cliz752zc000lwb86y5gtxstu
-- https://nextjs.org/docs/app/getting-started/project-structure?utm_source=chatgpt.com
+- https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366
