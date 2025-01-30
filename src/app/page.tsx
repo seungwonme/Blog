@@ -1,12 +1,16 @@
-import NavLink from "@/components/navLink/NavLink";
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div>
       <h1>Hello, Next.js!</h1>
       <p>Welcome to blog.</p>
-      <NavLink href="/about">About</NavLink>
-      <NavLink href="/blog">blog</NavLink>
+      <div>
+        <Link href="/about">About</Link>
+      </div>
+      <div>
+        <Link href="/blog">Blog</Link>
+      </div>
     </div>
   );
 }

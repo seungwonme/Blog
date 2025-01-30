@@ -1,24 +1,25 @@
-import NavLink from "@/components/navLink/NavLink";
-import { notFound } from "next/navigation";
-import { getPosts } from "@/actions/posts";
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getPost } from '@/actions/post';
 
 export default async function Post({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const posts = await getPosts();
   const id = (await params).id;
-  const post = posts?.find((post) => String(post.id) === id);
+  const post = await getPost(id);
   if (!post) {
     return notFound();
   }
 
   return (
     <div>
-      <h1>{post.title}</h1>
+      <h1 className="text-primary font-bold">{post.title}</h1>
+      <p>Created at {new Date(post.created_at).toLocaleString()}</p>
+      <p>Updated at {new Date(post.updated_at).toLocaleString()}</p>
       <p>{post.contents}</p>
-      <NavLink href="/blog">Go to Blog</NavLink>
+      <Link href="/blog">Go to Blog</Link>
     </div>
   );
 }

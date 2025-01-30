@@ -10,7 +10,7 @@ const D2Coding = localFont({
       style: 'normal',
     },
     {
-      path: '../fonts/D2Coding.woff2',
+      path: '../fonts/D2CodingBold.woff2',
       weight: '700',
       style: 'normal',
     },
